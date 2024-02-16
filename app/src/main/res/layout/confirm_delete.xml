@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/confirmDeleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Estás seguro que quieres borrar a todos los usuarios?"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/confirmDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"/>
+
+    <Button
+        android:id="@+id/cancelDeleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"/>
+</LinearLayout>
