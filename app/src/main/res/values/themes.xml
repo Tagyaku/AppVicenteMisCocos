@@ -2,8 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.APPVicenteMisCocos" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorSecondaryVariant">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Agrega más personalizaciones según tus colores y preferencias -->
     </style>
 
-    <style name="Theme.APPVicenteMisCocos" parent="Base.Theme.APPVicenteMisCocos" />
+    <style name="Theme.APPVicenteMisCocos" parent="Base.Theme.APPVicenteMisCocos">
+        <!-- Aquí puedes personalizar aún más el tema si es necesario -->
+    </style>
 </resources>
