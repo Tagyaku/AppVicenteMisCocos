@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CFCFCF"
+        android:background="@drawable/fondo"
         tools:context=".MainActivity">
 
         <TextView
@@ -119,7 +119,7 @@
             android:id="@+id/HiddenButton"
             android:layout_width="168dp"
             android:layout_height="117dp"
-            android:text="Button"
+
             android:textColor="#CFCFCF"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
