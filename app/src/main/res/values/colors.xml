@@ -1,6 +1,6 @@
 <resources>
     <color name="colorPrimary">#000000</color> <!-- Color primario -->
-    <color name="colorPrimaryDark">#2D6A4F</color> <!-- Color primario oscuro -->
+    <color name="colorPrimaryDark">#000000</color> <!-- Color primario oscuro -->
     <color name="colorAccent">#E9C46A</color> <!-- Color de acento -->
     <color name="colorBackground">#F0ECE3</color> <!-- Color de fondo -->
     <color name="colorText">#2B2D42</color> <!-- Color de texto -->

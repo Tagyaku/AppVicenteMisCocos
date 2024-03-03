@@ -6,7 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#CFCFCF"
+        android:background="@drawable/fondo"
         tools:context=".RegisterActivity">
 
         <TextView
@@ -159,7 +159,7 @@
             android:layout_height="95dp"
             android:layout_marginEnd="160dp"
             android:layout_marginBottom="204dp"
-            android:background="#CFCFCF"
+            android:background="#FFFFFF"
             android:fontFamily="sans-serif-black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

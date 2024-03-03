@@ -6,7 +6,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    android:background="#CFCFCF"
+    android:background="@drawable/fondo"
     tools:context="com.example.appvicentemiscocos.AdminActivity">
 
     <Button
