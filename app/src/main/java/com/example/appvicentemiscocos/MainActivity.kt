@@ -70,10 +70,10 @@ class MainActivity : AppCompatActivity() {
                                 }
                                 startActivity(intent)
                             } else {
-                                showToast("Incorrect password. Try again.")
+                                showToast("Contraseña incorrecta")
                             }
                         } else {
-                            showToast("User not found. Please register.")
+                            showToast("Usuario no encontrado")
                         }
                     }
                 }

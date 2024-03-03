@@ -101,7 +101,7 @@ class RegisterActivity : AppCompatActivity() {
                     if (existingUser != null) {
                         Toast.makeText(
                             this,
-                            "Username already in use. Please choose another one.",
+                            "Usuario en uso, escoja otro",
                             Toast.LENGTH_SHORT
                         ).show()
                     } else {
@@ -116,7 +116,7 @@ class RegisterActivity : AppCompatActivity() {
                             userDao.insertUsers(newUser)
                         }
 
-                        Toast.makeText(this, "Registration successful", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
                         saveUserDataToDatabase(username, password, birthDate)
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
@@ -165,7 +165,7 @@ class RegisterActivity : AppCompatActivity() {
 
             launch(Dispatchers.Main) {
                 if (existingUser != null) {
-                    showToast("Username already in use. Please choose another one.")
+                    showToast("Usuario en uso, escoja otro")
                 } else {
                     val newUser = User(
                         username = username,
@@ -181,7 +181,7 @@ class RegisterActivity : AppCompatActivity() {
                     binding.RepeatPassword.text.clear()
                     binding.BirthDate.text.clear()
 
-                    showToast("Registration saved successfully")
+                    showToast("Registro exitoso")
 
                     val intent = Intent(this@RegisterActivity, MainActivity::class.java)
                     startActivity(intent)
@@ -239,7 +239,7 @@ class RegisterActivity : AppCompatActivity() {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 openCamera()
             } else {
-                Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Permiso denegado", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -267,18 +267,18 @@ class RegisterActivity : AppCompatActivity() {
         termsAccepted: Boolean
     ): Boolean {
         if (username.length < 4 || username.length > 15) {
-            showToast("Username must be between 4 and 15 characters.")
+            showToast("El Usuario debe ser de 4 a 15 caracteres")
             return false
         }
 
         val passwordRegex = Regex("^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#\$%^&*(),.?:{}|<>]).{6,15}$")
         if (!password.matches(passwordRegex)) {
-            showToast("Password must be 6-15 characters with at least one number, one uppercase letter, and one special character (!@#$%^&*(),.?:{}|<>).")
+            showToast("Contraseña:6-15 caracteres ,minimo un numero,una mayúscula y un caracter especial")
             return false
         }
 
         if (password != repeatPassword) {
-            showToast("Passwords do not match.")
+            showToast("Las contraseñas no coinciden")
             return false
         }
 
