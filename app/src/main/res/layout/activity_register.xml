@@ -13,46 +13,58 @@
             android:id="@+id/UsernameTextView"
             android:layout_width="74dp"
             android:layout_height="21dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginBottom="40dp"
             android:fontFamily="sans-serif-black"
             android:text="Username:"
-
+            app:layout_constraintBottom_toTopOf="@+id/PasswordTextView"
+            app:layout_constraintEnd_toStartOf="@+id/Username"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.47000003" />
 
         <EditText
             android:id="@+id/Username"
             android:layout_width="179dp"
             android:layout_height="45dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="36dp"
             android:ems="10"
             android:fontFamily="sans-serif-black"
             android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/Password"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/UsernameTextView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/Password"
             android:layout_width="175dp"
             android:layout_height="41dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="44dp"
             android:ems="10"
             android:fontFamily="sans-serif-black"
             android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/RepeatPassword"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PasswordTextView"
             app:layout_constraintTop_toBottomOf="@+id/Username" />
 
         <TextView
             android:id="@+id/PasswordTextView"
             android:layout_width="69dp"
             android:layout_height="23dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="sans-serif-black"
             android:text="Password:"
+            app:layout_constraintBottom_toTopOf="@+id/RepeatPasswordTextView"
+            app:layout_constraintEnd_toStartOf="@+id/Password"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/UsernameTextView" />
 
@@ -60,11 +72,12 @@
             android:id="@+id/RepeatPasswordTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="sans-serif-black"
             android:text="Repeat Password:"
+            app:layout_constraintBottom_toTopOf="@+id/BirthDateTextView"
             app:layout_constraintEnd_toStartOf="@+id/RepeatPassword"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,12 +87,14 @@
             android:id="@+id/avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="152dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="5dp"
             android:fontFamily="sans-serif-black"
             android:text="Avatar:"
+            app:layout_constraintEnd_toStartOf="@+id/CameraImageView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/avatarContainer" />
+            app:layout_constraintTop_toBottomOf="@+id/takePhotoButton" />
 
         <EditText
             android:id="@+id/RepeatPassword"
@@ -87,20 +102,28 @@
             android:layout_height="43dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="40dp"
+            android:layout_marginBottom="5dp"
             android:ems="10"
             android:fontFamily="sans-serif-black"
             android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/BirthDate"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/RepeatPasswordTextView"
             app:layout_constraintTop_toBottomOf="@+id/Password" />
+
 
         <TextView
             android:id="@+id/BirthDateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="30dp"
             android:fontFamily="sans-serif-black"
             android:text="Birth Date:"
+            app:layout_constraintBottom_toTopOf="@+id/takePhotoButton"
+            app:layout_constraintEnd_toStartOf="@+id/BirthDate"
+            app:layout_constraintHorizontal_bias="0.21"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RepeatPasswordTextView" />
 
@@ -108,12 +131,16 @@
             android:id="@+id/BirthDate"
             android:layout_width="185dp"
             android:layout_height="47dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="36dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="20dp"
             android:ems="10"
             android:fontFamily="sans-serif-black"
             android:inputType="date"
+            app:layout_constraintBottom_toTopOf="@+id/takePhotoButton"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/BirthDateTextView"
             app:layout_constraintTop_toBottomOf="@+id/RepeatPassword" />
 
 
@@ -122,82 +149,96 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="124dp"
             android:fontFamily="sans-serif-black"
             android:text="Accept Terms of Use"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/TermsOfUse"
             app:layout_constraintHorizontal_bias="0.943"
-            app:layout_constraintStart_toStartOf="parent" />
-
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CameraImageView" />
 
         <CheckBox
             android:id="@+id/TermsOfUse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
             android:layout_marginEnd="92dp"
             android:layout_marginBottom="36dp"
             app:layout_constraintBottom_toTopOf="@+id/VerifyRegisterbutton"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TermsTextView"
+            app:layout_constraintTop_toBottomOf="@+id/CameraImageView" />
 
         <Button
             android:id="@+id/VerifyRegisterbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="52dp"
             android:layout_marginEnd="152dp"
             android:layout_marginBottom="40dp"
             android:fontFamily="sans-serif-black"
             android:text="Register"
             android:textColor="#CFCFCF"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TermsTextView" />
 
         <ImageButton
             android:id="@+id/CameraImageView"
             android:layout_width="92dp"
             android:layout_height="95dp"
-            android:layout_marginEnd="160dp"
-            android:layout_marginBottom="204dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="40dp"
             android:background="#FFFFFF"
             android:fontFamily="sans-serif-black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/TermsTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatar"
+            app:layout_constraintTop_toBottomOf="@+id/takePhotoButton" />
 
         <Button
             android:id="@+id/chooseRandomImageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="100dp"
-            android:layout_marginBottom="208dp"
+            android:layout_width="89dp"
+            android:layout_height="19dp"
             android:fontFamily="sans-serif-black"
             android:text="Choose Random Image"
             android:textColor="#CFCFCF"
             android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/TermsOfUse"
-            app:layout_constraintEnd_toEndOf="parent" />
+            tools:layout_editor_absoluteX="421dp"
+            tools:layout_editor_absoluteY="302dp" />
 
         <Button
             android:id="@+id/takePhotoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="144dp"
+            android:layout_marginBottom="5dp"
             android:fontFamily="sans-serif-black"
             android:text="Take Photo"
             android:textColor="#CFCFCF"
+            app:layout_constraintBottom_toTopOf="@+id/CameraImageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/chooseRandomImageButton" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BirthDate" />
 
         <LinearLayout
             android:id="@+id/avatarContainer"
-            android:layout_width="420dp"
-            android:layout_height="79dp"
+            android:layout_width="10dp"
+            android:layout_height="54dp"
             android:gravity="center"
             android:orientation="horizontal"
 
             android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteX="410dp"
             tools:layout_editor_absoluteY="240dp">
 
             <ImageButton
