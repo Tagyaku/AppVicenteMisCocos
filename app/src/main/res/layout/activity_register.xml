@@ -6,16 +6,18 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#CFCFCF"
         tools:context=".RegisterActivity">
 
         <TextView
             android:id="@+id/UsernameTextView"
             android:layout_width="74dp"
             android:layout_height="21dp"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-black"
             android:text="Username:"
-            app:layout_constraintEnd_toStartOf="@+id/Username"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,20 +25,22 @@
             android:id="@+id/Username"
             android:layout_width="179dp"
             android:layout_height="45dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="36dp"
             android:ems="10"
+            android:fontFamily="sans-serif-black"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/Password"
-            android:layout_width="166dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="113dp"
+            android:layout_width="175dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="44dp"
             android:ems="10"
+            android:fontFamily="sans-serif-black"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Username" />
@@ -45,11 +49,10 @@
             android:id="@+id/PasswordTextView"
             android:layout_width="69dp"
             android:layout_height="23dp"
-            android:layout_marginStart="58dp"
-            android:layout_marginTop="56dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-black"
             android:text="Password:"
-            app:layout_constraintEnd_toStartOf="@+id/Password"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/UsernameTextView" />
 
@@ -58,20 +61,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="1dp"
+            android:fontFamily="sans-serif-black"
             android:text="Repeat Password:"
             app:layout_constraintEnd_toStartOf="@+id/RepeatPassword"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+        <TextView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="152dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Avatar:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatarContainer" />
 
         <EditText
             android:id="@+id/RepeatPassword"
             android:layout_width="180dp"
             android:layout_height="43dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="72dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
             android:ems="10"
+            android:fontFamily="sans-serif-black"
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Password" />
@@ -80,11 +97,10 @@
             android:id="@+id/BirthDateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="62dp"
-            android:layout_marginTop="41dp"
-            android:layout_marginEnd="2dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-black"
             android:text="Birth Date:"
-            app:layout_constraintEnd_toStartOf="@+id/BirthDate"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RepeatPasswordTextView" />
 
@@ -92,22 +108,14 @@
             android:id="@+id/BirthDate"
             android:layout_width="185dp"
             android:layout_height="47dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="96dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="36dp"
             android:ems="10"
+            android:fontFamily="sans-serif-black"
             android:inputType="date"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RepeatPassword" />
 
-        <TextView
-            android:id="@+id/AvatarTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="62dp"
-            android:layout_marginTop="26dp"
-            android:text="Avatar:"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BirthDateTextView" />
 
         <TextView
             android:id="@+id/TermsTextView"
@@ -115,30 +123,33 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
             android:layout_marginEnd="2dp"
-            android:layout_marginBottom="128dp"
+            android:layout_marginBottom="140dp"
+            android:fontFamily="sans-serif-black"
             android:text="Accept Terms of Use"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/TermsOfUse"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.943"
             app:layout_constraintStart_toStartOf="parent" />
+
 
         <CheckBox
             android:id="@+id/TermsOfUse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="184dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="36dp"
             app:layout_constraintBottom_toTopOf="@+id/VerifyRegisterbutton"
             app:layout_constraintEnd_toEndOf="parent" />
-
 
         <Button
             android:id="@+id/VerifyRegisterbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="252dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif-black"
             android:text="Register"
+            android:textColor="#CFCFCF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -146,8 +157,10 @@
             android:id="@+id/CameraImageView"
             android:layout_width="92dp"
             android:layout_height="95dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="204dp"
+            android:background="#CFCFCF"
+            android:fontFamily="sans-serif-black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -155,9 +168,12 @@
             android:id="@+id/chooseRandomImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="84dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="208dp"
+            android:fontFamily="sans-serif-black"
             android:text="Choose Random Image"
+            android:textColor="#CFCFCF"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/TermsOfUse"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -165,21 +181,24 @@
             android:id="@+id/takePhotoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="144dp"
+            android:fontFamily="sans-serif-black"
             android:text="Take Photo"
+            android:textColor="#CFCFCF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chooseRandomImageButton" />
-
 
         <LinearLayout
             android:id="@+id/avatarContainer"
             android:layout_width="420dp"
             android:layout_height="79dp"
-            android:layout_marginTop="4dp"
             android:gravity="center"
             android:orientation="horizontal"
+
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AvatarTextView">
+            tools:layout_editor_absoluteY="240dp">
 
             <ImageButton
                 android:id="@+id/AvatarimageButton3"
@@ -202,5 +221,6 @@
                 android:layout_weight="1"
                 android:src="@android:drawable/btn_star" />
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

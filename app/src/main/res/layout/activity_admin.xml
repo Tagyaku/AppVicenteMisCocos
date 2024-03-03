@@ -6,6 +6,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
+    android:background="#CFCFCF"
     tools:context="com.example.appvicentemiscocos.AdminActivity">
 
     <Button
@@ -13,8 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Listar Usuarios"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#CFCFCF"
         android:layout_marginTop="16dp"
-        />
+        android:background="@drawable/button_background" />
 
     <Button
         android:id="@+id/changePasswordButton"
@@ -22,8 +25,10 @@
         android:layout_height="wrap_content"
         android:text="Cambiar Contraseña"
         android:layout_below="@id/userListButton"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#CFCFCF"
         android:layout_marginTop="16dp"
-        />
+        android:background="@drawable/button_background" />
 
     <Button
         android:id="@+id/deleteAllUsersButton"
@@ -31,8 +36,10 @@
         android:layout_height="wrap_content"
         android:text="Borrar Todos los Usuarios"
         android:layout_below="@id/changePasswordButton"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#CFCFCF"
         android:layout_marginTop="16dp"
-        />
+        android:background="@drawable/button_background" />
 
     <Button
         android:id="@+id/backButton"
@@ -40,7 +47,9 @@
         android:layout_height="wrap_content"
         android:text="Volver"
         android:layout_below="@id/deleteAllUsersButton"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#CFCFCF"
         android:layout_marginTop="16dp"
-        />
+        android:background="@drawable/button_background" />
 
 </RelativeLayout>

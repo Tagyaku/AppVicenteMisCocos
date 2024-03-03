@@ -33,8 +33,6 @@ class MainActivity : AppCompatActivity() {
         binding.HiddenButton.isClickable = true
         binding.HiddenButton.setBackgroundColor(android.graphics.Color.TRANSPARENT)
 
-        binding.RegisterButton.setBackgroundColor(android.graphics.Color.TRANSPARENT)
-        binding.SignInButton.setBackgroundColor(android.graphics.Color.TRANSPARENT)
 
 
         binding.RegisterButton.setOnClickListener {

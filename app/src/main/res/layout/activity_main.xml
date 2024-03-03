@@ -29,30 +29,33 @@
             android:id="@+id/RegisterButton"
             android:layout_width="186dp"
             android:layout_height="64dp"
+            android:layout_gravity="center"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="112dp"
-            android:background="@drawable/button_border"
+            android:background="@drawable/button_background"
             android:fontFamily="sans-serif-black"
             android:text="Registrar"
-            android:textColor="#000000"
+            android:textColor="#CFCFCF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/AppNameText"
-            app:rippleColor="#000000" />
+            app:rippleColor="#FFFFFF" />
 
         <Button
             android:id="@+id/SignInButton"
             android:layout_width="221dp"
             android:layout_height="69dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="96dp"
-            android:background="@drawable/button_border"
+            android:background="@drawable/button_background"
             android:fontFamily="sans-serif-black"
             android:text="Iniciar sesión"
-            android:textColor="#000000"
+            android:textColor="#CFCFCF"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
+
 
         <TextView
             android:id="@+id/textView"
@@ -107,6 +110,7 @@
             android:layout_marginEnd="52dp"
             android:layout_marginBottom="82dp"
             android:text="Next"
+            android:textColor="#FFFFFF"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

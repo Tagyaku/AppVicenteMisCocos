@@ -1,5 +1,5 @@
 <resources>
-    <color name="colorPrimary">#4ECCA3</color> <!-- Color primario -->
+    <color name="colorPrimary">#000000</color> <!-- Color primario -->
     <color name="colorPrimaryDark">#2D6A4F</color> <!-- Color primario oscuro -->
     <color name="colorAccent">#E9C46A</color> <!-- Color de acento -->
     <color name="colorBackground">#F0ECE3</color> <!-- Color de fondo -->
