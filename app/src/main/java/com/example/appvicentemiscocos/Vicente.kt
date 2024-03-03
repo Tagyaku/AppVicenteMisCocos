@@ -25,9 +25,20 @@ class Vicente : AppCompatActivity() {
 
           mensajesCocos = listOf(
             "No me toques los cocos $username",
-            "Mensaje 2",
-            "Mensaje 3",
-        )
+            "¿Qué tienen en común un niño y un globo? Los dos estallan cuando los pinchas.",
+            "¿Qué es blanco, negro y rojo? Un pingüino con una cuchilla de afeitar.",
+            "¿Cuál es la parte más dura de un vegetal? La silla de ruedas.",
+            "¿Cómo mueren las estrellas? Por sobredosis.",
+            "¿Por qué se suicidó Hitler? Porque le llegó la factura del gas.",
+            "¿Qué tiene mi padre en común con Nemo? No se puede encontrar a ninguno de los dos.",
+            "¿De qué murió Bob Marley? De un porrazo.",
+            "¿Cuál es la diferencia entre una pizza y un niño? La pizza no chilla cuando la metes en el horno.",
+            "Mamá, ¿puedo rebañar la taza? Vale, pero antes tira de la cadena",
+            "¿Qué es rojo y malo para los dientes? Un ladrillo.",
+            "Papá, ¿ya tienes los resultados de la prueba de ADN? Llámame Manolo",
+            "Ay, doctor, estoy muy nervioso. Esta es mi primera operación. No se preocupe. La mía también",
+            "Mis padres me criaron como hijo único, lo que fue una putada para mi hermano pequeño."
+                      )
 
 
         setupCocoButtons()
